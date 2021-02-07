@@ -1,0 +1,14 @@
+$cor-fundo: #eee;
+$cor-font: #333;
+$border-padrao: 3px;
+
+body {
+    background-color: $cor-fundo;
+    color: $cor-font;
+}
+
+.quadrado {
+    width: 200px;
+    height: 200px;
+    border: $border-padrao solid #069;
+}
