@@ -1,0 +1,44 @@
+@import 'reset';
+
+nav {
+    background-color: #eee;
+    height: 100px;
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+    }
+    li {
+        display: inline-block;
+        a {
+            display: block;
+            background-color: #ccc;
+            padding: 10px;
+            text-decoration: none;
+            color: #000;
+
+            &:hover {
+                background-color: tomato;
+            }
+        }
+    }
+}
+
+%item-padrao {
+    font-size: 14px;
+    padding: 10px;
+    border: 1px solid #999;
+}
+%item-negrito {
+    font-weight: bold;
+}
+
+@for $i from 1 through 10 {
+    .item-#{$i} {
+        @extend %item-padrao;
+
+        @if $i <= 3 {
+            @extend %item-negrito;
+        }
+    }
+}
