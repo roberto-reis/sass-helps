@@ -1,0 +1,30 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  background-color: #eee;
+  height: 100px;
+}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+nav li {
+  display: inline-block;
+  transform: rotate(30deg);
+  -webkit-transform: rotate(30deg);
+  -moz-transform: rotate(30deg);
+  -ms-transform: rotate(60deg);
+}
+nav li a {
+  display: block;
+  background-color: #ccc;
+  padding: 10px;
+  text-decoration: none;
+  color: #000;
+}
